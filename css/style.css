@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonte/Roboto-Thin.ttf);
+}
+
+
+body{
+    background-color: #05b3d6;
+    font-family: serif;
+    color: black;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    
+}
+
+/************* LISTA DIV LINKS ********************/
+.links{
+    /*background-color: aliceblue;*/
+    float: right;
+    width: 250px;
+    height: 100px;
+    margin-right: 1%;
+}
+
+.lista{
+    margin-top: 30px;
+    list-style: none;
+    color: #fff;
+    font-family: 'roboto';
+    font-size: 16px;
+}
+
+/************* FIM DA LISTA DIV LINKS ********************/
+
+/*************** CABEÇALHO **********************/
+.header{
+   background-color: #01022e;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    box-shadow: 0px 2px #f0c808;
+
+}
+
+.img-alura{
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 6%;
+}
+
+/**************************************************/
+
+
+
+/*********TEXT AREA ***********/
+textarea{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    float: left;
+    background-color: #e8f1f2;
+    border: 1px solid #CCC;
+    font-family: 'roboto';
+    font-size: 25px;
+    resize:none;
+    overflow:auto;
+    border-radius: 2%;
+    text-align: justify;
+
+}
+
+#criptografia{
+    
+    width: 60%;
+    height: 300px; 
+    margin-top: 1%;
+    margin-left: 20%;   
+    margin-right: 20%;
+    margin-bottom: 10px;
+
+}
+
+#descriptografia{
+
+    width: 60%;
+    height: 300px; 
+    margin-top: 1%;
+    margin-left: 20%;   
+    margin-right: 20%;       
+}
+
+#descriptografia:placeholder-shown{
+    background-image: url(../img/duvida2.png);
+    background-repeat: no-repeat;
+}
+
+#descriptografia:not(:placeholder-shown){
+    background-image: none;
+}
+
+/*********FIM TEXT AREA ***********/
+
+h1{
+    font-family: 'roboto';
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #01022e;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.h1{
+    font-family: 'roboto';
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.h1::after{
+    content: '|';
+    margin-left: 5px;
+    opacity:1;
+    -webkit-animation:  pisca .7s infinite;
+    animation: pisca .7s infinite;
+}
+
+@-webkit-keyframes pisca{
+    0%,100%{opacity:1;}
+    50%{opacity:0;}
+}
+@keyframes pisca{
+    0%,100%{opacity:1;}
+    50%{opacity:0;}
+}
+
+.criptografia_div{
+
+    width: 50%;
+    height: 500px;
+   /* background-color: #1221af;*/
+    float: left;
+}
+
+.descriptografia_div{
+    width: 50%;
+    height: 500px;
+   /* background-color: rgb(217, 68, 223);*/
+    float: left;
+
+}
+
+
+/********* FOOTER ***********/
+
+.footer_div{
+    width: 100%;
+    font-family: 'roboto';
+    background-color: #13293D;
+    opacity: 90%;
+	padding: 10px;
+	color: #fff;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+    right: 0%;
+     
+
+}
+
+
+/********* FIM FOOTER ***********/
+
+.button_div{
+   /* background-color: aliceblue;*/
+    width: 60%;
+    height: 70px;
+    margin-top: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+    float: left;
+    text-align: center;
+}
+
+.button_div2{
+    /*background-color: aliceblue;*/
+    width: 60%;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    float: left;
+    text-align: center;
+}
+
+button{
+    margin-top: 5px;
+    width: 180px;
+    padding: 15px 15px;
+    border-radius: 50px;
+    border: 1px solid #007bff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#btn-criptografar{
+    border: 1.5px solid #01022e;
+    background-color: #01022e;
+    color: #fff;  
+
+}
+#btn-criptografar:hover{
+    background: #9137b4;
+    color: #fff;
+    border: 1.5px solid #01022e;
+    transition: background 1s;
+
+}
+
+#btn-descriptografar{
+    background-color: #56d28d;
+    color: #fff;
+}
+
+#btn-descriptografar:hover{
+    background: #3ca86d;
+    border: #3ca86d;
+    color: #fff;
+    transition: background 1s;
+}
+
+#btn-copiar{
+    background-color: #56d28d;
+    color: #fff;
+}
+
+#btn-copiar:hover{
+    background: #3ca86d;
+    border: #3ca86d;
+    color: #fff;
+    transition: background 1s;
+}

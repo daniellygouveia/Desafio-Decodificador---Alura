@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Decodificador</title>
+</head >
+
+
+
+<body>
+  <!-------------------------------------------DIV HEADER------------->
+   <div class="header">
+        <a href="https://www.alura.com.br/"><img src="img/logo_alura-removebg-preview.png" class="img-alura" alt="imagem logo"></a>
+        <div class="links">
+        <ul class="lista">
+            <li>
+             Me siga nas redes sociais:
+            </li>
+            <li>
+            <a href="https://www.linkedin.com/in/danielly-gouveia-de-oliveira-84857a236"> <img src="img/LinkedIn.png" width="90px" height="17px" alt="LinkedIn"></a>  <a href="https://github.com/daniellygouveia"><img src="img/github.png"  width="90px" height="17px"  alt="Github"></a>
+            </li>
+
+        </ul>
+        </div>
+   </div>
+    
+   <!-------------------------------------------DIV CRIPTOGRAFIA------------->
+ <div class="criptografia_div"> 
+        <h1 class="h1">Adicione o que deseja codificar</h1>
+    <textarea name="Criptografia" placeholder="Digite seu texto aqui..." id="criptografia" cols="30" rows="10"></textarea>   
+    <h2> <img src="img/alerta-removebg-preview.png"  width="15px" height="15px" alt="alerta"> Apenas letras minusculas e sem acento. </h2>
+
+    <div class="button_div"><button id="btn-criptografar" onclick="criptografar()">criptografar</button>
+        <button id="btn-descriptografar" onclick="descriptografar()">descriptografar</button> 
+    </div> 
+   
+  </div>
+
+  <!-------------------------------------------DIV DESCRIPTOGRAFIA------------->
+    <div class="descriptografia_div"> 
+        <h1>Texto codificado</h1>
+    <textarea name="Desriptografia" placeholder="O texto criptografado aparecerá aqui..." id="descriptografia" cols="30" rows="10" readonly></textarea> 
+    <div class="button_div2" onclick="copiar()"><button id="btn-copiar">copiar</button></div>
+    </div>
+        
+    </div>
+<!-------------------------------------------DIV FOOTER------------->
+    <div class="footer_div">
+      Desenvolvido por Danielly Gouveia de Oliveira - ® 2022 - Alura
+    </div>
+
+     <script rel="javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
