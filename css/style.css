@@ -69,6 +69,7 @@ textarea{
     border-radius: 2%;
     text-align: justify;
 
+
 }
 
 #criptografia{
@@ -92,7 +93,7 @@ textarea{
 }
 
 #descriptografia:placeholder-shown{
-    background-image: url(../img/duvida2.png);
+    background-image: url(../img/duvida.png);
     background-repeat: no-repeat;
 }
 
@@ -164,6 +165,7 @@ h2{
     width: 100%;
     font-family: 'roboto';
     background-color: #13293D;
+    width: 100%;
     opacity: 90%;
 	padding: 10px;
 	color: #fff;
